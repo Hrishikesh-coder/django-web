@@ -22,5 +22,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('student.urls')),
     path('subscribe/', include('subscribe.urls')),
-    path('djangotutor/', tutorial.as_view())
+    path('djangotutor/', tutorial.as_view()),
+    path('registration/',include('register.urls'))
 ]
