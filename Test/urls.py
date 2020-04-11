@@ -23,5 +23,6 @@ urlpatterns = [
     path('',include('student.urls')),
     path('subscribe/', include('subscribe.urls')),
     path('djangotutor/', tutorial.as_view()),
+    path('upload/',include('profile_maker.urls')),
     path('registration/',include('register.urls'))
 ]
