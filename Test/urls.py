@@ -16,7 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path,include
 
+from .views import *
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',include('student.urls'))
+    path('',include('student.urls')),
+    path('subscribe/', include('subscribe.urls')),
+    path('djangotutor/', tutorial.as_view())
 ]
